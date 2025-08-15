@@ -1,5 +1,6 @@
-# Data Analyst Agent
-This project implements a sophisticated, multimodal Data Analyst Agent. It exposes a powerful API endpoint that leverages a Large Language Model (Google's Gemini) to dynamically source, prepare, analyze, and visualize data from various sources, including CSVs, Excel files, websites, and even images.
+# AI Data Analyst Agent
+
+This is the official repository for the AI Data Analyst Agent. The project implements a sophisticated, multimodal agent that exposes a powerful API endpoint to dynamically source, prepare, analyze, and visualize data from various sources, including CSVs, Excel files, websites, and even images, using Google's Gemini LLM.
 
 The agent is built on a robust **Planner-Executor** pattern, ensuring a clear separation between reasoning (the LLM's plan) and action (code execution). All user-requested code is run in a **secure, isolated Docker sandbox** to prevent security risks.
 
@@ -30,8 +31,7 @@ graph TD
         G[web_scraper]
     end
     E -- Returns final result --> B;
-    B -- Sends JSON response --> H[User];
-```
+    B -- Sends JSON response --> H[User];```
 
 1.  **The Planner (Gemini):** Receives the user's questions, along with the schema of any uploaded data files and the content of any images. It generates a multi-step JSON plan to solve the task.
 2.  **The Executor (`app.py`):** The Flask server parses the JSON plan and executes each step in sequence using a predefined set of tools.
@@ -53,8 +53,8 @@ Follow these steps to get the application running locally.
 
 1.  **Clone the Repository**
     ```bash
-    git clone <your-repo-url>
-    cd data-analyst-agent
+    git clone https://github.com/harsh040506/AI-Data-Analyst-Agent.git
+    cd AI-Data-Analyst-Agent
     ```
 
 2.  **Create and Activate a Python Virtual Environment**
