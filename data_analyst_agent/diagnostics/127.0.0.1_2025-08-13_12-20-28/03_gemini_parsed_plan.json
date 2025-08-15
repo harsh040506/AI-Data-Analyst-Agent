@@ -1,0 +1,8 @@
+[
+    {
+        "tool": "python_interpreter",
+        "args": {
+            "code": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport io\nimport base64\n\ndf = pd.read_csv('sample-weather.csv')\n\ndf['date'] = pd.to_datetime(df['date'])\n\naverage_temp_c = df['temp_c'].mean()\nmax_precip_date = df.loc[df['precipitation_mm'].idxmax(), 'date'].strftime('%Y-%m-%d')\nmin_temp_c = df['temp_c'].min()\ntemp_precip_correlation = df['temp_c'].corr(df['precipitation_mm'])\naverage_precip_mm = df['precipitation_mm'].mean()\n\nplt.figure(figsize=(10, 6))\nplt.plot(df['date'], df['temp_c'], color='red')\nplt.title('Temperature Over Time')\nplt.xlabel('Date')\nplt.ylabel('Temperature (C)')\nplt.grid(True)\ntemp_line_chart_buffer = io.BytesIO()\nplt.savefig(temp_line_chart_buffer, format='png')\ntemp_line_chart_buffer.seek(0)\ntemp_line_chart = base64.b64encode(temp_line_chart_buffer.read()).decode('utf-8')\nplt.close()\n\nplt.figure(figsize=(10, 6))\nplt.hist(df['precipitation_mm'], bins=10, color='orange')\nplt.title('Precipitation Histogram')\nplt.xlabel('Precipitation (mm)')\nplt.ylabel('Frequency')\nplt.grid(True)\nprecip_histogram_buffer = io.BytesIO()\nplt.savefig(precip_histogram_buffer, format='png')\nprecip_histogram_buffer.seek(0)\nprecip_histogram = base64.b64encode(precip_histogram_buffer.read()).decode('utf-8')\nplt.close()\n\nfinal_answer = {\n    'average_temp_c': average_temp_c,\n    'max_precip_date': max_precip_date,\n    'min_temp_c': min_temp_c,\n    'temp_precip_correlation': temp_precip_correlation,\n    'average_precip_mm': average_precip_mm,\n    'temp_line_chart': f'data:image/png;base64,{temp_line_chart}',\n    'precip_histogram': f'data:image/png;base64,{precip_histogram}'\n}\n\n"
+        }
+    }
+]

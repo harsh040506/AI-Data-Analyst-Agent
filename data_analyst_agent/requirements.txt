@@ -1,0 +1,44 @@
+# requirements.txt
+
+# --- Core Web & Agent Framework ---
+flask                  # Lightweight WSGI web framework for building web apps and APIs
+google-generativeai    # Google’s Generative AI API client for integrating models like Gemini
+python-dotenv          # Loads environment variables from a .env file into the environment
+requests               # Simple HTTP library for sending HTTP/1.1 requests
+
+# --- Data Sourcing & File Formats ---
+beautifulsoup4         # Library for parsing HTML and XML documents (web scraping)
+lxml                   # High-performance HTML/XML parser used by BeautifulSoup
+html5lib               # Pure-Python HTML parser, builds a valid HTML5 tree (used with BeautifulSoup)
+openpyxl               # Read/write Excel 2010 xlsx/xlsm/xltx/xltm files
+pyarrow                # Apache Arrow support, used for in-memory columnar data and Parquet
+fastparquet            # Alternative engine for reading/writing Parquet files
+
+# --- Core Data Science & Analysis Suite ---
+pandas                 # Powerful data structures and data analysis tools
+numpy                  # Fundamental package for numerical computation in Python
+scipy                  # Library for scientific computing and statistical functions
+
+# --- Database & High-Performance Querying ---
+duckdb                 # In-process SQL OLAP database, great for fast analytics on files
+SQLAlchemy             # SQL toolkit and ORM for Python database access
+
+# --- Machine Learning & Statistical Modeling ---
+scikit-learn           # Machine learning library with tools for classification, regression, clustering
+statsmodels            # Statistical models, hypothesis testing, and data exploration
+xgboost                # Gradient boosting framework optimized for performance
+lightgbm               # Fast, distributed gradient boosting from Microsoft
+
+# --- Specialized Analysis ---
+networkx               # Tools for the creation, manipulation, and study of complex networks
+prophet                # Time series forecasting tool developed by Facebook/Meta
+geopandas              # Extends pandas to allow spatial operations on geometric types
+
+# --- Visualization ---
+matplotlib             # Comprehensive library for creating static, animated, and interactive plots
+seaborn                # Statistical data visualization built on top of matplotlib
+plotly                 # Interactive graphing library supporting web-based visualizations
+Pillow                 # Python Imaging Library (PIL) fork; supports opening, manipulating, saving images
+
+# --- Docker Integration ---
+docker                 # Docker SDK for Python to interact with Docker containers and images

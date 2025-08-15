@@ -1,0 +1,20 @@
+[
+    {
+        "tool": "web_scraper",
+        "args": {
+            "url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
+        }
+    },
+    {
+        "tool": "python_interpreter",
+        "args": {
+            "code": "import pandas as pd\nfor col in ['Worldwide gross', 'Year', 'Rank', 'Peak']:\n    df[col] = pd.to_numeric(df[col].astype(str).str.replace(r'[^\\d.]', '', regex=True), errors='coerce')\ndf.dropna(subset=['Worldwide gross', 'Year', 'Rank', 'Peak'], inplace=True)\ndf['Year'] = df['Year'].astype(int)\ndf['Rank'] = df['Rank'].astype(int)\ndf['Peak'] = df['Peak'].astype(int)"
+        }
+    },
+    {
+        "tool": "python_interpreter",
+        "args": {
+            "code": "import json, base64\nfrom io import BytesIO\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n# Perform arbitrary calculations\nanswer1 = len(df[(df['Worldwide gross'] >= 2000000000) & (df['Year'] < 2000)])\nanswer2 = df[df['Worldwide gross'] >= 1500000000].sort_values('Year').iloc[0]['Title']\nanswer3 = df['Rank'].corr(df['Peak'])\n# Generate plot\nplt.figure(figsize=(8, 5))\nsns.regplot(data=df, x='Rank', y='Peak', line_kws={'color':'red', 'linestyle':'--'}, ci=None)\nplt.title('Film Rank vs. Peak Position')\nplt.xlabel('Overall Rank')\nplt.ylabel('Peak Rank')\nplt.grid(True)\nimg_buffer = BytesIO()\nplt.savefig(img_buffer, format='png', bbox_inches='tight')\nimg_buffer.seek(0)\nanswer4 = f\"data:image/png;base64,{base64.b64encode(img_buffer.read()).decode('utf-8')}\"\n# Assemble final answer variable\nfinal_answer = [answer1, answer2, answer3, answer4]"
+        }
+    }
+]

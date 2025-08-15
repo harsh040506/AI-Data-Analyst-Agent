@@ -1,0 +1,105 @@
+2025-08-13 12:11:57,756 - DataAnalystAgent - INFO - Checking for sandbox Docker image...
+2025-08-13 12:11:57,772 - DataAnalystAgent - INFO - Docker image not found. Building... (This may take a minute)
+2025-08-13 12:11:58,441 - DataAnalystAgent - INFO - Docker image built successfully.
+2025-08-13 12:12:46,754 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_12-12-46
+2025-08-13 12:12:46,763 - DataAnalystAgent - INFO - Found uploaded CSV file with field name: data.csv
+2025-08-13 12:12:46,779 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 12:12:47,663 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 12:12:53,560 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 12:12:53,560 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 12:12:53,560 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:12:53,602 - DataAnalystAgent - INFO - Made file 'data.csv' available. Expecting LLM code to load it.
+2025-08-13 12:13:02,752 - DataAnalystAgent - INFO - Interpreter stdout: {"average_temp_c": 5.1, "max_precip_date": "2024-01-06", "min_temp_c": 2, "temp_precip_correlation": 0.04135192240969327, "average_precip_mm": 0.9, "temp_line_chart": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAJYCAYAAADxHswlAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAiE9JREFUeJzs3Xt8zvX/x/HntYPZMIectZyKcupAByRyjJJKR0rphKjEHOY0M2fm0MEhFSUipXMRQgmRCJ2cdUA5bhgz2+f3x/vH2nejuWzX+3Ntj/vtttveu3btup57uYzXPu+Dx3EcRw...
+2025-08-13 12:13:02,757 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:13:02,760 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 12:13:02,767 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 12:24:08,450 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_12-24-08
+2025-08-13 12:24:08,498 - DataAnalystAgent - INFO - Found uploaded CSV file with field name: data.csv
+2025-08-13 12:24:08,554 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 12:24:10,496 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 12:24:15,217 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 12:24:15,217 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 12:24:15,218 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:24:15,235 - DataAnalystAgent - INFO - Made file 'data.csv' available. Expecting LLM code to load it.
+2025-08-13 12:24:29,268 - DataAnalystAgent - INFO - Interpreter stdout: {"total_sales": 1140, "top_region": "West", "day_sales_correlation": 0.22281245492773066, "bar_chart": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAH0CAYAAADFQEl4AAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAUr1JREFUeJzt3XlYFeX///HXAQQXBFxYRNHcFfctJTXXxD23yrJEMy1z148WafpRc0krl3IpNZfUTy6555opluKSZm5pbimlgIWAooDC/P7wx/l2UkvlMAfw+biuuS7OPfeZeQ/e4HkxM/dYDMMwBAAAAAAmcHJ0AQAAAAAeHwQQAAAAAKYhgAAAAAAwDQEEAAAAgGkIIAAAAA...
+2025-08-13 12:24:29,281 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:24:29,287 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 12:24:29,304 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 12:37:13,062 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_12-37-13
+2025-08-13 12:37:13,068 - DataAnalystAgent - INFO - Found uploaded CSV file with field name: data.csv
+2025-08-13 12:37:13,074 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 12:37:15,214 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 12:37:20,958 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 12:37:20,959 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 12:37:20,959 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:37:20,969 - DataAnalystAgent - INFO - Made file 'data.csv' available. Expecting LLM code to load it.
+2025-08-13 12:37:31,120 - DataAnalystAgent - INFO - Interpreter stdout: {"edge_count": 7, "highest_degree_node": "Bob", "average_degree": 2.8, "density": 0.7, "shortest_path_alice_eve": 2, "network_graph": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAPoCAYAAABNo9TkAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAy8NJREFUeJzs/XmYpOld3vnesWXkvu9LZETtS67xRkuNuqWmW62WZAH2YDPCxjDDMYvtc+yDfY2xOdcMtvE54zPYl82MfWZsPPZgMJjNgwAJGUkIgdEgIHKpqqx9ifeN3Pd9j+X80cqkqruqOrMqI583Ir6fv+hWVsRdl92R7x3P83s...
+2025-08-13 12:37:31,123 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:37:31,126 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 12:37:31,134 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 12:51:20,874 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_12-51-20
+2025-08-13 12:51:20,882 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 12:51:22,819 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 12:51:27,146 - DataAnalystAgent - INFO - Received and parsed a plan with 3 steps.
+2025-08-13 12:51:27,146 - DataAnalystAgent - INFO - Executing INTERMEDIATE step 1: tool='web_scraper'
+2025-08-13 12:51:27,147 - DataAnalystAgent - INFO - Using basic web_scraper for URL: https://en.wikipedia.org/wiki/List_of_highest-grossing_films
+2025-08-13 12:51:31,397 - DataAnalystAgent - INFO - Successfully scraped 90 table(s). Returning the first one.
+2025-08-13 12:51:31,401 - DataAnalystAgent - INFO - Executing INTERMEDIATE step 2: tool='python_interpreter'
+2025-08-13 12:51:31,403 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:51:31,431 - DataAnalystAgent - INFO - Loading data from previous step into 'df' from data.csv
+2025-08-13 12:51:34,059 - DataAnalystAgent - INFO - Interpreter stdout: ...
+2025-08-13 12:51:34,063 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:51:34,065 - DataAnalystAgent - INFO - Executing FINAL step 3: tool='python_interpreter'
+2025-08-13 12:51:34,066 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:51:34,076 - DataAnalystAgent - INFO - Loading data from previous step into 'df' from data.csv
+2025-08-13 12:51:38,060 - DataAnalystAgent - INFO - Interpreter stdout: [1, "Titanic", 0.5275843984141044, "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq4AAAHWCAYAAAC2Zgs3AAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAY3JJREFUeJzt3XlYVPX+B/D3mWFmkGUQUAQUTMHcNdNULFdQIFtMK225qXmra2gqt01vZfaUtlrem1q/Fm0z09Jri6KkhpmaZnrDJQ3SRBGQFIZ1GOac3x8nBkYGZGC2M7xfz+OTc86Z4cP5zuC7w/d8voIkSRKIiIiIiDycyt0FEBERERE1BYMrERERESkCgysRERERKQKDKxEREREpAoMrERERESkCgysRERERKQKDKxEREREpAoMrERERESkCgysRERERKQKDKxE16P...
+2025-08-13 12:51:38,063 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:51:38,065 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 12:51:38,074 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 12:52:26,710 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_12-52-26
+2025-08-13 12:52:26,712 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 12:52:27,302 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 12:52:33,532 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 12:52:33,533 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 12:52:33,533 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 12:54:57,589 - DataAnalystAgent - INFO - Interpreter stdout: {"Which high court disposed the most cases from 2019 - 2022?": "9_13", "What's the regression slope of the date_of_registration - decision_date by year in the court=33_10?": -51.3285600266586, "Plot the year and # of days of delay from the above question as a scatterplot with a regression line. Encode as a base64 data URI under 100,000 characters": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2QAAAIjCAYAAABswtioAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi...
+2025-08-13 12:54:58,673 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 12:54:58,695 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 12:54:58,705 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 14:18:09,979 - DataAnalystAgent - INFO - Checking for sandbox Docker image...
+2025-08-13 14:18:10,008 - DataAnalystAgent - INFO - Docker image not found. Building... (This may take a minute)
+2025-08-13 14:18:33,838 - DataAnalystAgent - INFO - Checking for sandbox Docker image...
+2025-08-13 14:18:34,022 - DataAnalystAgent - INFO - Docker image already exists.
+2025-08-13 14:20:49,778 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_14-20-49
+2025-08-13 14:20:50,106 - DataAnalystAgent - INFO - Found uploaded image: image.png
+2025-08-13 14:20:50,110 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 14:20:56,011 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 14:21:03,829 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 14:21:03,831 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 14:21:03,862 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 14:30:26,828 - DataAnalystAgent - INFO - Interpreter stdout: {"Which high court disposed the most cases from 2019 - 2022?": "9_13", "What's the regression slope of the date_of_registration - decision_date by year in the court=33_10?": -51.3285600266586, "Plot the year and # of days of delay from the above question as a scatterplot with a regression line. Encode as a base64 data URI under 100,000 characters": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2QAAAIjCAYAAABswtioAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi...
+2025-08-13 14:30:28,474 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 14:30:28,504 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 14:30:28,513 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 16:01:03,285 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_16-01-03
+2025-08-13 16:01:03,603 - DataAnalystAgent - INFO - Found uploaded image: image.png
+2025-08-13 16:01:03,604 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 16:01:05,634 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 16:01:13,123 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 16:01:13,125 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 16:01:13,125 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 16:01:16,448 - DataAnalystAgent - INFO - Interpreter stdout: {"total_sales": 1140, "top_region": "West", "day_sales_correlation": 0.22281245492773066, "bar_chart": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAJYCAYAAACadoJwAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAVZJJREFUeJzt3Xl4DWf/x/HPSSIJ4iSWLEKonVhqLSlqS4Xal7ZarVSVVu2UNg+lqKW0tbS2omjx1FIUtYVaWmIptZfapSVBIwkhCcn8/ugv5+kpaos5ibxf13WuK2fmnrm/E5NxPmfmnrEYhmEIAAAAAEzg5OgCAAAAAGQdBBAAAAAApiGAAAAAADANAQQAAACAaQggAAAAAE...
+2025-08-13 16:01:16,461 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 16:01:16,462 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 16:01:16,465 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
+2025-08-13 16:05:15,684 - DataAnalystAgent - INFO - Created diagnostics folder: diagnostics\127.0.0.1_2025-08-13_16-05-15
+2025-08-13 16:05:15,702 - DataAnalystAgent - INFO - Found uploaded image: image.png
+2025-08-13 16:05:15,702 - DataAnalystAgent - INFO - Attempting to configure Gemini API with key #1...
+2025-08-13 16:05:17,745 - DataAnalystAgent - INFO - Successfully configured Gemini with key #1 using gemini-2.0-flash.
+2025-08-13 16:05:25,816 - DataAnalystAgent - INFO - Received and parsed a plan with 1 steps.
+2025-08-13 16:05:25,816 - DataAnalystAgent - INFO - Executing FINAL step 1: tool='python_interpreter'
+2025-08-13 16:05:25,816 - DataAnalystAgent - INFO - Preparing to execute code in sandboxed environment...
+2025-08-13 16:05:31,374 - DataAnalystAgent - INFO - Interpreter stdout: {"average_temp_c": 5.1, "max_precip_date": "06-01-2024", "min_temp_c": 2, "temp_precip_correlation": 0.04135192240969327, "average_precip_mm": 0.9, "temp_line_chart": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAGQCAYAAABWJQQ0AAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjUsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvWftoOwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAbTxJREFUeJzt3XmcjfX7x/HXmTOLGWbsa8aeXYiyVURoQdI3FX0tSfadsmZfy1p2QiJbtCj6SoiiJEQbJVshxIx1jDn374/Pb4ZpRg1mzj3n3O/n4zEP99znnvu+rnOfOc41n81lWZaFiI...
+2025-08-13 16:05:31,378 - DataAnalystAgent - INFO - Found modified dataframe. Reading back state.
+2025-08-13 16:05:31,379 - DataAnalystAgent - INFO - Final step executed. Preparing response.
+2025-08-13 16:05:31,384 - DataAnalystAgent - INFO - Request fully processed. Returning final JSON object.
