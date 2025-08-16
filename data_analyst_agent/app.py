@@ -13,15 +13,8 @@ from tools import web_scraper, python_interpreter, build_docker_image
 app = Flask(__name__)
 
 GEMINI_API_KEYS = [
-    "AIzaSyCvvefST747e7U0OU3fdyimGwlrHiW8qNk",
-    "AIzaSyDn5vmV8DWdITgiAItdoJ54OWnittq9N9Y",
-    "AIzaSyBHXaQwTkf9YzNbb9ckqQseimAx00TojOQ",
-    "AIzaSyBmastTWQSpbp5C1m6t2n7WTFQXBkGF2FY",
-    "AIzaSyAC0RedkyytV4ccmTuGg0qI1mIoyRMdcQk",
-    "AIzaSyDWPJ8pSvlJPtPBTPlyZD24_bT75_dILeM",
-    "AIzaSyBa8Xpmar0A9BAOLhJS_SHD9X58HIxesro",
-    "AIzaSyB6nLzcxeguO08MoCVcCqW4VrdkO0N9gSw",
-    "AIzaSyAOwiv0IfenDioFQCMdYkc1Mfy-IdafOMg",
+    "GEMINI_API_KEY_1",
+    "GEMINI_API_KEY_2",
 ]
 
 DIAGNOSTICS_DIR = "diagnostics"
@@ -201,4 +194,5 @@ if __name__ == '__main__':
         build_docker_image()
         app.run(host='0.0.0.0', port=5002, debug=False)
     except Exception as e:
+
         log.error(f"Failed to start the application.", exc_info=True)
